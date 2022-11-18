@@ -12,8 +12,8 @@ public class AmazonBasicsStepdefs {
     AmazonLogin amazonLogin;
     AmazonBasics amazonBasics;
 
-    @Given("we are at the amazon homepage")
-    public void we_are_at_the_amazon_homepage() {
+    @Given("user is at the amazon homepage")
+    public void userIsAtTheAmazonHomepage() {
         amazonLogin = new AmazonLogin();
 
         amazonLogin.goTo();
@@ -42,4 +42,7 @@ public class AmazonBasicsStepdefs {
         BrowserUtil.waitFor(2);
 
     }
+
+
+
 }
